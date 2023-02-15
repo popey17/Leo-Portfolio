@@ -6,7 +6,7 @@
   -moz-box-sizing: border-box;
 }
 
-header{
+header {
   width: 100%;
   height: 50px;
   background-color: #3c3a39;
@@ -16,7 +16,8 @@ header{
   padding: 0 24px;
 }
 
-header a,nav a {
+header a,
+nav a {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
@@ -70,7 +71,7 @@ header a,nav a {
   line-height: 50px;
 }
 
-.home .bio p{
+.home .bio p {
   font-family: 'Poppins', sans-serif;
   line-height: 24px;
 }
