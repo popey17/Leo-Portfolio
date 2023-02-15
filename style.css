@@ -50,11 +50,12 @@ nav a {
 .home {
   height: 590px;
   color: #fff;
-  padding: 100px 24px;
+  padding: 0 24px;
   background: #1c1a19 url("resources/Group.png") 100% 110% no-repeat;
   background-size: 120px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .home .intro h1 {
