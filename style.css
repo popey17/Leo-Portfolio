@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #3c3a39;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+header a,
+nav a {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-items {
+  display: none;
+  background-color: #6a6765;
+}
+
+.nav-items ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-items li {
+  list-style: none;
+  padding: 10px 24px;
+}
+
+.nav-items li a {
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Home */
+.home {
+  height: 590px;
+  color: #fff;
+  padding: 0 24px;
+  background: #1c1a19 url("resources/Group.png") 100% 110% no-repeat;
+  background-size: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .intro h1 {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  color: #ff6b00;
+}
+
+.home .job h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  line-height: 50px;
+}
+
+.home .bio p {
+  font-family: 'Poppins', sans-serif;
+  line-height: 24px;
+}
+
+.home .socials ul {
+  display: flex;
+}
+
+.home .socials li {
+  list-style: none;
+}
+
+.home .socials i {
+  margin: 20px 20px 0 0;
+  font-size: 20px;
+  color: #fff;
+  list-style: none;
+}
+
+/* Recent Works */
+
+.recent-work > .title {
+  font-family: 'Crete Round', serif;
+  font-size: 40px;
+  line-height: 52px;
+  color: #1c1a19;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.recent-work hr {
+  width: 327px;
+  margin: 50px auto 80px auto;
+}
+
+.works .main .poster {
+  background: #ff6b00;
+  width: 87%;
+  aspect-ratio: 4/3;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.works .main .poster img {
+  width: 85%;
+}
+
+.works .main .description {
+  padding: 0 24px;
+}
+
+.description > .title {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+}
+
+.description > .about {
+  font-family: 'Inter', sans-serif;
+}
+
+.description > .lang {
+  display: flex;
+  margin-top: 12px;
+}
+
+.description > .lang > div {
+  border: #8993a4 1px solid;
+  margin-right: 12px;
+  padding: 10px 12px;
+}
+
+.description button {
+  width: 124px;
+  height: 48px;
+  padding: 12px;
+  margin: 12px 0;
+  background-color: #ff6b00;
+}
+
+.description button a {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+}
