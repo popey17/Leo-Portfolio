@@ -65,7 +65,7 @@
 
 currently not deployed you can view in localhost
 
-- [Live Demo Link](https://localhost:8000)
+- [Live Demo Link](https://popey17.github.io/Leo-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,8 +92,6 @@ To run the project:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
