@@ -16,18 +16,12 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
@@ -45,7 +39,10 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">HTML and CSS</a></li>
+    <li><a href="https://html.com/">HTML</a></li>
+  </ul>
+   <ul>
+    <li><a href="https://www.w3.org/Style/CSS/Overview.en.html/">HTML</a></li>
   </ul>
 </details>
 
@@ -62,8 +59,6 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-currently not deployed you can view in localhost
 
 - [Live Demo Link](https://popey17.github.io/Leo-Portfolio/)
 
