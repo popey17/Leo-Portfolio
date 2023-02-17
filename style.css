@@ -153,30 +153,31 @@ nav a {
   font-family: 'Inter', sans-serif;
 }
 
-.description > .lang {
+.description > .lang ul {
   display: flex;
   margin-top: 12px;
 }
 
-.description > .lang > div {
+.description > .lang > ul > li {
   border: #8993a4 1px solid;
   margin-right: 12px;
   padding: 10px 12px;
+  list-style: none;
 }
 
-.description button {
-  width: 124px;
-  height: 48px;
-  padding: 12px;
-  margin: 12px 0;
-  background-color: #ff6b00;
-}
-
-.description button a {
+.description a.btn {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   color: #fff;
+  background-color: #ff6b00;
   text-decoration: none;
+  width: 124px;
+  height: 48px;
+  margin: 12px 0;
+  border: none;
+  display: block;
+  text-align: center;
+  line-height: 48px;
 }
 
 .card-block .card-pic {
@@ -225,14 +226,15 @@ nav a {
   margin-bottom: 10px;
 }
 
-.card-block .card-lang {
+.card-block .card-lang > ul {
   display: flex;
 }
 
-.card-block .card-lang > div {
+.card-block .card-lang > ul > li {
   padding: 10px;
   background: rgba(255, 255, 255, 0.24);
   margin-right: 10px;
+  list-style: none;
 }
 
 .card-block .seemore a {
@@ -262,10 +264,9 @@ nav a {
 .about-me .home-content {
   width: 87%;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: #fff;
   padding: 120px 0 200px 0;
 }
@@ -274,10 +275,12 @@ nav a {
   font-family: 'Crete Round', serif;
   font-size: 72px;
   color: #ff6b00;
+  margin-bottom: 24px;
 }
 
 .about-me .home-content .bio {
   font-family: 'Inter', sans-serif;
+  margin-bottom: 24px;
 }
 
 .about-me .home-content .resume a {
@@ -291,6 +294,27 @@ nav a {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   background: #ff6b00;
+}
+
+.description a.btn:hover,
+.card-block .seemore a.seemore-btn:hover,
+.about-me .home-content .resume a:hover {
+  background: #fff5e1;
+  color: #ff6b00;
+  border: 1px solid #f55800;
+}
+
+.description a.btn:disabled,
+.card-block .seemore a.seemore-btn:disabled,
+.about-me .home-content .resume a:disabled {
+  background: #f4f1f0;
+}
+
+.description a.btn:active,
+.card-block .seemore a.seemore-btn:active,
+.about-me .home-content .resume a:active {
+  background: #e05304;
+  color: #f4f1f0;
 }
 
 .about-me hr {
@@ -346,6 +370,7 @@ nav a {
 .personal-skill .language .skill-title {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
+  list-style: none;
 }
 
 .personal-skill .language .skill-title:not(:last-child) {
