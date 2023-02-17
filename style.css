@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -93,8 +95,14 @@ nav a {
 }
 
 /* Recent Works */
+.recent-work .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-.recent-work > .title {
+.recent-work .heading > .title {
   font-family: 'Crete Round', serif;
   font-size: 40px;
   line-height: 52px;
@@ -103,16 +111,25 @@ nav a {
   padding-top: 120px;
 }
 
-.recent-work hr {
-  width: 327px;
+.recent-work .line {
+  min-width: 85%;
+  height: 2px;
+  background-color: #1c1a19;
   margin: 50px auto 80px auto;
+}
+
+.works {
+  width: 87%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.4fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 24px;
 }
 
 .works .main .poster {
   background: #ff6b00;
-  width: 87%;
   aspect-ratio: 4/3;
-  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,13 +137,14 @@ nav a {
 
 .works .main .poster img {
   width: 85%;
+  box-shadow: -80px 70px 50px -70px rgba(0, 0, 0, 0.8), 80px 70px 50px -70px rgba(0, 0, 0, 0.8);
 }
 
 .works .main .description {
   padding: 0 24px;
 }
 
-.description > .title {
+.recent-work .works .description > .title {
   font-family: 'Crete Round', serif;
   font-size: 32px;
 }
@@ -135,28 +153,300 @@ nav a {
   font-family: 'Inter', sans-serif;
 }
 
-.description > .lang {
+.description > .lang ul {
   display: flex;
   margin-top: 12px;
 }
 
-.description > .lang > div {
+.description > .lang > ul > li {
   border: #8993a4 1px solid;
   margin-right: 12px;
   padding: 10px 12px;
+  list-style: none;
 }
 
-.description button {
-  width: 124px;
-  height: 48px;
-  padding: 12px;
-  margin: 12px 0;
-  background-color: #ff6b00;
-}
-
-.description button a {
+.description a.btn {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   color: #fff;
+  background-color: #ff6b00;
   text-decoration: none;
+  width: 124px;
+  height: 48px;
+  margin: 12px 0;
+  border: none;
+  display: block;
+  text-align: center;
+  line-height: 48px;
+}
+
+.card-block .card-pic {
+  position: relative;
+  height: 338px;
+  background:
+    linear-gradient(
+      180.45deg,
+      rgba(
+        38,
+        38,
+        38,
+        0
+      )
+      0.75%,
+      rgba(
+        38,
+        38,
+        38,
+        0.9
+      )
+      61.94%
+    ),
+    url(
+      "resources/aura.png"
+    );
+}
+
+.card-block .card-pic .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 338px;
+  color: #fff;
+  padding: 5%;
+}
+
+.card-block .card-pic .card-info .card-title {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.card-block .card-discription {
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 10px;
+}
+
+.card-block .card-lang > ul {
+  display: flex;
+}
+
+.card-block .card-lang > ul > li {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.24);
+  margin-right: 10px;
+  list-style: none;
+}
+
+.card-block .seemore a {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  height: 48px;
+  width: 100%;
+  background: #ff6b00;
+  text-align: center;
+  line-height: 48px;
+}
+
+.works:last-child {
+  margin-bottom: 120px;
+}
+
+/* About Me */
+
+.about-me {
+  background: #1c1a19 url("resources/illustration-about-me-mobile.png") 100% 95% no-repeat;
+}
+
+.about-me .home-content {
+  width: 87%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+  padding: 120px 0 200px 0;
+}
+
+.about-me .home-content > .heading {
+  font-family: 'Crete Round', serif;
+  font-size: 72px;
+  color: #ff6b00;
+  margin-bottom: 24px;
+}
+
+.about-me .home-content .bio {
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 24px;
+}
+
+.about-me .home-content .resume a {
+  width: 160px;
+  height: 48px;
+  display: block;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  background: #ff6b00;
+}
+
+.description a.btn:hover,
+.card-block .seemore a.seemore-btn:hover,
+.about-me .home-content .resume a:hover {
+  background: #fff5e1;
+  color: #ff6b00;
+  border: 1px solid #f55800;
+}
+
+.description a.btn:disabled,
+.card-block .seemore a.seemore-btn:disabled,
+.about-me .home-content .resume a:disabled {
+  background: #f4f1f0;
+}
+
+.description a.btn:active,
+.card-block .seemore a.seemore-btn:active,
+.about-me .home-content .resume a:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
+.about-me hr {
+  width: 85%;
+  margin: auto;
+}
+
+.personal-skill {
+  background: #1c1a19;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 44px;
+  text-align: center;
+  padding: 130px 0;
+}
+
+.personal-skill .language .name {
+  margin-bottom: 42px;
+}
+
+.personal-skill .language .name .obli-square {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+  transform: rotate(45deg);
+}
+
+.personal-skill .language .name .square {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+}
+
+.personal-skill .language .name .circle {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+  border-radius: 50%;
+}
+
+.personal-skill .language .name span {
+  margin: 0 40px 0 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.personal-skill .language .skill-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  list-style: none;
+}
+
+.personal-skill .language .skill-title:not(:last-child) {
+  margin: 22px;
+}
+
+.contact {
+  width: 87%;
+  margin: auto;
+  padding: 120px 0;
+}
+
+.contact .contact-heading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact .form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 24px;
+}
+
+.form .form-fill {
+  padding: 0 12px;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #dbd8d7;
+  font-family: 'Inter', sans-serif;
+}
+
+.form textarea {
+  border: none;
+  background: #fbfbf7;
+  font-family: 'Inter', sans-serif;
+  padding: 12px;
+}
+
+.form .submit {
+  height: 48px;
+  width: 131px;
+  margin: 25px auto;
+  background: #ff6b00;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact hr {
+  background: #e4e7ec;
+}
+
+footer .footer-icon {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin: 25px auto;
+  list-style: none;
+}
+
+footer .footer-icon a.social-links .fa-brands {
+  font-size: 20px;
+  color: #505f79;
+}
+
+footer .mobile {
+  width: 134px;
+  height: 5px;
+  background: #0d151e;
+  border-radius: 10px;
+  margin: 0 auto 8px auto;
 }
