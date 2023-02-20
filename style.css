@@ -226,15 +226,16 @@ nav a {
   margin-bottom: 10px;
 }
 
-.card-block .card-lang > ul {
+/* .card-block .card-lang > ul {
   display: flex;
-}
+} */
 
 .card-block .card-lang > ul > li {
   padding: 10px;
   background: rgba(255, 255, 255, 0.24);
   margin-right: 10px;
   list-style: none;
+  float: left;
 }
 
 .card-block .seemore a {
