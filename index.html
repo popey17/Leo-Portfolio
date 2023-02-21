@@ -280,11 +280,11 @@
         </div>
         <div class="form">
             <form action="https://formspree.io/f/xknarzjq" method="post">
-                <input class="form-fill" type="text" name="name" placeholder="Full name" >
-                <input class="form-fill" type="email" name="email" placeholder="Email address" >
-                <textarea name="mail-content" id="text" cols="30" rows="5"
-                    placeholder="Enter text here"></textarea>
-                <input class="submit" type="submit" value="Get in touch">
+                <input class="form-fill" type="text" name="name"  pattern="^[a-zA-Z]{3,30}$" placeholder="Full name" required>
+                <input class="form-fill" type="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Email address" required>
+                <textarea name="mail-content" id="text" pattern="^[a-zA-Z0-9]{1,500}$" cols="30" rows="5"
+                    placeholder="Enter text here" required></textarea>
+                <button class="submit" type="submit">Get in touch</button>
             </form>
         </div>
     </section>
