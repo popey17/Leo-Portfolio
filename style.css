@@ -8,6 +8,10 @@
   -moz-box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+}
+
 header {
   width: 100%;
   height: 50px;
@@ -226,15 +230,16 @@ nav a {
   margin-bottom: 10px;
 }
 
-.card-block .card-lang > ul {
+/* .card-block .card-lang > ul {
   display: flex;
-}
+} */
 
 .card-block .card-lang > ul > li {
   padding: 10px;
   background: rgba(255, 255, 255, 0.24);
   margin-right: 10px;
   list-style: none;
+  float: left;
 }
 
 .card-block .seemore a {
@@ -294,27 +299,6 @@ nav a {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   background: #ff6b00;
-}
-
-.description a.btn:hover,
-.card-block .seemore a.seemore-btn:hover,
-.about-me .home-content .resume a:hover {
-  background: #fff5e1;
-  color: #ff6b00;
-  border: 1px solid #f55800;
-}
-
-.description a.btn:disabled,
-.card-block .seemore a.seemore-btn:disabled,
-.about-me .home-content .resume a:disabled {
-  background: #f4f1f0;
-}
-
-.description a.btn:active,
-.card-block .seemore a.seemore-btn:active,
-.about-me .home-content .resume a:active {
-  background: #e05304;
-  color: #f4f1f0;
 }
 
 .about-me hr {
@@ -381,6 +365,8 @@ nav a {
   width: 87%;
   margin: auto;
   padding: 120px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact .contact-heading {
@@ -391,14 +377,14 @@ nav a {
   margin-bottom: 50px;
 }
 
-.contact .form {
+.contact .form form {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto;
   gap: 24px;
 }
 
-.form .form-fill {
+.form form .form-fill {
   padding: 0 12px;
   height: 50px;
   border: none;
@@ -406,14 +392,14 @@ nav a {
   font-family: 'Inter', sans-serif;
 }
 
-.form textarea {
+.form form textarea {
   border: none;
   background: #fbfbf7;
   font-family: 'Inter', sans-serif;
   padding: 12px;
 }
 
-.form .submit {
+.form form button {
   height: 48px;
   width: 131px;
   margin: 25px auto;
@@ -424,6 +410,30 @@ nav a {
   color: #fff;
   font-weight: 700;
   cursor: pointer;
+}
+
+.description a.btn:hover,
+.card-block .seemore a.seemore-btn:hover,
+.about-me .home-content .resume a:hover,
+.form form button:hover {
+  background: #fff5e1;
+  color: #ff6b00;
+  border: 1px solid #f55800;
+}
+
+.description a.btn:disabled,
+.card-block .seemore a.seemore-btn:disabled,
+.about-me .home-content .resume a:disabled,
+.form form button:disabled {
+  background: #f4f1f0;
+}
+
+.description a.btn:active,
+.card-block .seemore a.seemore-btn:active,
+.about-me .home-content .resume a:active,
+.form form button:active {
+  background: #e05304;
+  color: #f4f1f0;
 }
 
 .contact hr {
