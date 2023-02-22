@@ -18,7 +18,7 @@ header {
   background-color: #3c3a39;
 }
 
-nav{
+nav {
   height: 100%;
   width: 90%;
   margin: auto;
@@ -463,9 +463,9 @@ footer .mobile {
 
 /* Desktop Versin (768px) */
 
-@media ( min-width: 768px ) {
+@media (min-width: 768px) {
   header {
-    height: 72px; 
+    height: 72px;
     padding: unset;
   }
 
@@ -500,7 +500,7 @@ footer .mobile {
   .home-content {
     width: 40%;
   }
-    
+
   .home .intro h1 {
     font-size: 72px;
     margin-bottom: 24px;
@@ -510,7 +510,7 @@ footer .mobile {
     font-size: 32px;
     margin-bottom: 24px;
   }
-  
+
   .home .bio p {
     font-size: 20px;
   }
@@ -520,7 +520,6 @@ footer .mobile {
     position: absolute;
     left: 5%;
     top: 50%;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
   }
-
 }
