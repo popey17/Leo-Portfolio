@@ -12,39 +12,50 @@
 
 <body>
     <header>
-        <div><a href="index.html">Leo</a></div>
         <nav>
-            <div><a href="#"><i class="fa-solid fa-bars"></i></a></div>
+            <div><a href="index.html">Leo</a>
+            </div>
+            <div>
+                <div>
+                    <ul class="nav-items">
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+                <div><a href="#"><i class="fa-solid fa-bars"></i></a></div>
+            </div>
         </nav>
     </header>
-    <div class="nav-items">
-        <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
-        </ul>
-    </div>
     <!--Home Section-->
-    <section class="home">
-        <div class="intro">
-            <h1>Hey There. I'm Leo</h1>
-        </div>
-        <div class="job">
-            <h2>I'am a full-stack Web developer</h2>
-        </div>
-        <div class="bio">
-            <p>I can help your business improve by building a nice website or portfolio. You can check some of my recent
-                works and if you have something to ask ,don't hestiate to contact me. Hope we can work together.</p>
-        </div>
-        <div class="socials">
-            <ul>
-                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-angellist"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-medium"></i></a></li>
-            </ul>
+    <section>
+        <div class="home-section">
+            <div class="home">
+                <div class="home-content">
+                    <div class="intro">
+                        <h1>Hey There. I'm Leo</h1>
+                    </div>
+                    <div class="job">
+                        <h2>I'am a full-stack Web developer</h2>
+                    </div>
+                    <div class="bio">
+                        <p>I can help your business improve by building a nice website or portfolio. You can check some of
+                            my recent
+                            works and if you have something to ask ,don't hestiate to contact me. Hope we can work together.
+                        </p>
+                    </div>
+                </div>
+                <div class="socials">
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-angellist"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-medium"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
     <!--Recent Work Section-->
@@ -218,7 +229,7 @@
     </section>
     <!--About Me-->
     <section class="about-me">
-        <div class="home-content">
+        <div class="about-content">
             <h2 class="heading">
                 About me
             </h2>
@@ -280,10 +291,13 @@
         </div>
         <div class="form">
             <form action="https://formspree.io/f/xknarzjq" method="post">
-                <input class="form-fill" type="text" name="name" maxlength="30" pattern="^[a-zA-Z]{3,30}$" placeholder="Full name" required>
-                <input class="form-fill" type="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Email address" required>
-                <textarea name="mail-content" id="text" pattern="^[a-zA-Z0-9]{1,500}$" maxlength="500" cols="30" rows="5"
-                    placeholder="Enter text here" required></textarea>
+                <input class="form-fill" type="text" name="name" maxlength="30" pattern="^[a-zA-Z]{3,30}$"
+                    placeholder="Full name" required>
+                <input class="form-fill" type="email" name="email"
+                    pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Email address"
+                    required>
+                <textarea name="mail-content" id="text" pattern="^[a-zA-Z0-9]{1,500}$" maxlength="500" cols="30"
+                    rows="5" placeholder="Enter text here" required></textarea>
                 <button class="submit" type="submit">Get in touch</button>
             </form>
         </div>

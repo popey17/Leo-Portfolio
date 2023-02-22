@@ -16,23 +16,27 @@ header {
   width: 100%;
   height: 50px;
   background-color: #3c3a39;
+}
+
+nav{
+  height: 100%;
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
-}
-
-header a,
-nav a {
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  text-decoration: none;
   font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav-items {
   display: none;
-  background-color: #6a6765;
 }
 
 .nav-items ul {
@@ -45,20 +49,16 @@ nav a {
   padding: 10px 24px;
 }
 
-.nav-items li a {
-  list-style: none;
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+/* Home */
+.home-section {
+  background: #1c1a19 url("resources/Group.png") 100% 110% no-repeat;
+  background-size: 120px;
 }
 
-/* Home */
 .home {
   height: 590px;
   color: #fff;
   padding: 0 24px;
-  background: #1c1a19 url("resources/Group.png") 100% 110% no-repeat;
-  background-size: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -266,7 +266,7 @@ nav a {
   background: #1c1a19 url("resources/illustration-about-me-mobile.png") 100% 95% no-repeat;
 }
 
-.about-me .home-content {
+.about-me .about-content {
   width: 87%;
   margin: auto;
   display: flex;
@@ -276,19 +276,19 @@ nav a {
   padding: 120px 0 200px 0;
 }
 
-.about-me .home-content > .heading {
+.about-me .about-content > .heading {
   font-family: 'Crete Round', serif;
   font-size: 72px;
   color: #ff6b00;
   margin-bottom: 24px;
 }
 
-.about-me .home-content .bio {
+.about-me .about-content .bio {
   font-family: 'Inter', sans-serif;
   margin-bottom: 24px;
 }
 
-.about-me .home-content .resume a {
+.about-me .about-content .resume a {
   width: 160px;
   height: 48px;
   display: block;
@@ -414,7 +414,7 @@ nav a {
 
 .description a.btn:hover,
 .card-block .seemore a.seemore-btn:hover,
-.about-me .home-content .resume a:hover,
+.about-me .about-content .resume a:hover,
 .form form button:hover {
   background: #fff5e1;
   color: #ff6b00;
@@ -423,14 +423,14 @@ nav a {
 
 .description a.btn:disabled,
 .card-block .seemore a.seemore-btn:disabled,
-.about-me .home-content .resume a:disabled,
+.about-me .about-content .resume a:disabled,
 .form form button:disabled {
   background: #f4f1f0;
 }
 
 .description a.btn:active,
 .card-block .seemore a.seemore-btn:active,
-.about-me .home-content .resume a:active,
+.about-me .about-content .resume a:active,
 .form form button:active {
   background: #e05304;
   color: #f4f1f0;
@@ -459,4 +459,68 @@ footer .mobile {
   background: #0d151e;
   border-radius: 10px;
   margin: 0 auto 8px auto;
+}
+
+/* Desktop Versin (768px) */
+
+@media ( min-width: 768px ) {
+  header {
+    height: 72px; 
+    padding: unset;
+  }
+
+  nav {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .nav-items {
+    display: flex;
+    font-size: 15px;
+  }
+
+  nav a .fa-solid {
+    display: none;
+  }
+
+  /* Home */
+
+  .home-section {
+    background: #1c1a19 url("resources/desktop\ wallpaper.png") 100% 110% no-repeat;
+    background-size: 650px;
+  }
+
+  .home {
+    height: 789px;
+    width: 80%;
+    margin: auto;
+    padding: unset;
+  }
+
+  .home-content {
+    width: 40%;
+  }
+    
+  .home .intro h1 {
+    font-size: 72px;
+    margin-bottom: 24px;
+  }
+
+  .home .job h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+  
+  .home .bio p {
+    font-size: 20px;
+  }
+
+  .home .socials ul {
+    flex-direction: column;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0,-50%);
+  }
+
 }
