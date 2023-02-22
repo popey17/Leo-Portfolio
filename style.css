@@ -527,7 +527,7 @@ footer .mobile {
 
   /* recent work */
 
-  .recent-work{
+  .recent-work {
     width: 80%;
     margin: auto;
   }
@@ -536,18 +536,19 @@ footer .mobile {
     flex-direction: row;
     margin: 135px 0 114px 0;
     justify-content: flex-start;
+
     /* gap: 24px; */
   }
 
   .recent-work .heading > .title {
-    padding-top: 0 ;
+    padding-top: 0;
   }
 
   .recent-work .line {
     margin: 0 auto;
     min-width: 65%;
   }
-  
+
   .works {
     width: 100%;
     display: grid;
@@ -572,6 +573,4 @@ footer .mobile {
   .description > .about {
     font-size: 20px;
   }
-
-
 }
