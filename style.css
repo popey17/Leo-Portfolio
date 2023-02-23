@@ -6,6 +6,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+
   /* overflow-x: hidden; */
 }
 
@@ -75,7 +76,7 @@ nav a {
   font-weight: 400;
   font-size: 56px;
   line-height: 68px;
-  padding-bottom: 10px ;
+  padding-bottom: 10px;
   color: #ff6b00;
 }
 
@@ -550,7 +551,7 @@ footer .mobile {
       margin-left: 100%;
       width: 300%;
     }
-  
+
     to {
       margin-left: 0%;
       width: 100%;
