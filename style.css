@@ -16,23 +16,27 @@ header {
   width: 100%;
   height: 50px;
   background-color: #3c3a39;
+}
+
+nav {
+  height: 100%;
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
-}
-
-header a,
-nav a {
   color: #fff;
   font-family: 'Roboto', sans-serif;
-  text-decoration: none;
   font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav-items {
   display: none;
-  background-color: #6a6765;
 }
 
 .nav-items ul {
@@ -45,20 +49,16 @@ nav a {
   padding: 10px 24px;
 }
 
-.nav-items li a {
-  list-style: none;
-  color: #fff;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+/* Home */
+.home-section {
+  background: #1c1a19 url("resources/Group.png") 100% 110% no-repeat;
+  background-size: 120px;
 }
 
-/* Home */
 .home {
   height: 590px;
   color: #fff;
   padding: 0 24px;
-  background: #1c1a19 url("resources/Group.png") 100% 110% no-repeat;
-  background-size: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +80,7 @@ nav a {
 
 .home .bio p {
   font-family: 'Poppins', sans-serif;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .home .socials ul {
@@ -103,7 +103,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .recent-work .heading > .title {
@@ -116,7 +116,7 @@ nav a {
 }
 
 .recent-work .line {
-  min-width: 85%;
+  min-width: 80%;
   height: 2px;
   background-color: #1c1a19;
   margin: 50px auto 80px auto;
@@ -151,6 +151,7 @@ nav a {
 .recent-work .works .description > .title {
   font-family: 'Crete Round', serif;
   font-size: 32px;
+  margin-bottom: 24px;
 }
 
 .description > .about {
@@ -167,11 +168,14 @@ nav a {
   margin-right: 12px;
   padding: 10px 12px;
   list-style: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
 }
 
 .description a.btn {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
+  font-weight: 700;
   color: #fff;
   background-color: #ff6b00;
   text-decoration: none;
@@ -184,9 +188,31 @@ nav a {
   line-height: 48px;
 }
 
-.card-block .card-pic {
-  position: relative;
+.card-block .card-pic.one {
   height: 338px;
+  background: url("resources/aura.png") 100% no-repeat;
+  background-size: cover;
+}
+
+.card-block .card-pic.two {
+  height: 338px;
+  background: url("resources/two.png") 100% no-repeat;
+  background-size: cover;
+}
+
+.card-block .card-pic.three {
+  height: 338px;
+  background: url("resources/Three.png") 100% no-repeat;
+  background-size: cover;
+}
+
+.card-block .card-pic.four {
+  height: 338px;
+  background: url("resources/four.png") 100% no-repeat;
+  background-size: cover;
+}
+
+.card-block .card-pic .card-info {
   background:
     linear-gradient(
       180.45deg,
@@ -195,33 +221,32 @@ nav a {
         38,
         38,
         0
-      )
-      0.75%,
+      ) 0.75%,
       rgba(
         38,
         38,
         38,
         0.9
-      )
-      61.94%
-    ),
-    url(
-      "resources/aura.png"
+      ) 61.94%
     );
-}
-
-.card-block .card-pic .card-info {
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 338px;
+  display: flex;
   color: #fff;
   padding: 5%;
+  opacity: 1;
+}
+
+.card-block .card-pic .card-info:hover {
+  opacity: 0;
 }
 
 .card-block .card-pic .card-info .card-title {
   font-family: 'Crete Round', serif;
+  font-weight: 400;
   font-size: 32px;
+  line-height: 44px;
   margin-bottom: 10px;
 }
 
@@ -230,11 +255,9 @@ nav a {
   margin-bottom: 10px;
 }
 
-/* .card-block .card-lang > ul {
-  display: flex;
-} */
-
 .card-block .card-lang > ul > li {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
   padding: 10px;
   background: rgba(255, 255, 255, 0.24);
   margin-right: 10px;
@@ -262,11 +285,11 @@ nav a {
 
 /* About Me */
 
-.about-me {
+#about-me {
   background: #1c1a19 url("resources/illustration-about-me-mobile.png") 100% 95% no-repeat;
 }
 
-.about-me .home-content {
+#about-me .about-content {
   width: 87%;
   margin: auto;
   display: flex;
@@ -276,19 +299,20 @@ nav a {
   padding: 120px 0 200px 0;
 }
 
-.about-me .home-content > .heading {
+#about-me .about-content .heading {
   font-family: 'Crete Round', serif;
   font-size: 72px;
   color: #ff6b00;
   margin-bottom: 24px;
 }
 
-.about-me .home-content .bio {
+#about-me .about-content .bio {
   font-family: 'Inter', sans-serif;
   margin-bottom: 24px;
+  line-height: 24px;
 }
 
-.about-me .home-content .resume a {
+#about-me .about-content .resume a {
   width: 160px;
   height: 48px;
   display: block;
@@ -301,13 +325,16 @@ nav a {
   background: #ff6b00;
 }
 
-.about-me hr {
+#about-me hr {
   width: 85%;
   margin: auto;
 }
 
 .personal-skill {
   background: #1c1a19;
+}
+
+.personal-skill-content {
   color: #fff;
   display: grid;
   grid-template-columns: 1fr;
@@ -317,11 +344,11 @@ nav a {
   padding: 130px 0;
 }
 
-.personal-skill .language .name {
+.personal-skill-content .language .name {
   margin-bottom: 42px;
 }
 
-.personal-skill .language .name .obli-square {
+.personal-skill-content .language .name .obli-square {
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -329,14 +356,14 @@ nav a {
   transform: rotate(45deg);
 }
 
-.personal-skill .language .name .square {
+.personal-skill-content .language .name .square {
   display: inline-block;
   width: 18px;
   height: 18px;
   background: #ff6b00;
 }
 
-.personal-skill .language .name .circle {
+.personal-skill-content .language .name .circle {
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -344,24 +371,24 @@ nav a {
   border-radius: 50%;
 }
 
-.personal-skill .language .name span {
+.personal-skill-content .language .name span {
   margin: 0 40px 0 20px;
   font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-weight: 700;
 }
 
-.personal-skill .language .skill-title {
+.personal-skill-content .language .skill-title {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
   list-style: none;
 }
 
-.personal-skill .language .skill-title:not(:last-child) {
-  margin: 22px;
+.personal-skill-content .language .skill-title:not(:last-child) {
+  margin: 22px 0 22px 0;
 }
 
-.contact {
+#contact {
   width: 87%;
   margin: auto;
   padding: 120px 0;
@@ -369,7 +396,7 @@ nav a {
   flex-direction: column;
 }
 
-.contact .contact-heading {
+#contact .contact-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -377,11 +404,10 @@ nav a {
   margin-bottom: 50px;
 }
 
-.contact .form form {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto auto;
-  gap: 24px;
+#contact .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .form form .form-fill {
@@ -414,7 +440,7 @@ nav a {
 
 .description a.btn:hover,
 .card-block .seemore a.seemore-btn:hover,
-.about-me .home-content .resume a:hover,
+#about-me .about-content .resume a:hover,
 .form form button:hover {
   background: #fff5e1;
   color: #ff6b00;
@@ -423,20 +449,20 @@ nav a {
 
 .description a.btn:disabled,
 .card-block .seemore a.seemore-btn:disabled,
-.about-me .home-content .resume a:disabled,
+#about-me .about-content .resume a:disabled,
 .form form button:disabled {
   background: #f4f1f0;
 }
 
 .description a.btn:active,
 .card-block .seemore a.seemore-btn:active,
-.about-me .home-content .resume a:active,
+#about-me .about-content .resume a:active,
 .form form button:active {
   background: #e05304;
   color: #f4f1f0;
 }
 
-.contact hr {
+#contact hr {
   background: #e4e7ec;
 }
 
@@ -459,4 +485,180 @@ footer .mobile {
   background: #0d151e;
   border-radius: 10px;
   margin: 0 auto 8px auto;
+}
+
+/* Desktop Versin (768px) */
+
+@media (min-width: 768px) {
+  header {
+    height: 72px;
+    padding: unset;
+  }
+
+  nav {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .nav-items {
+    display: flex;
+    font-size: 15px;
+  }
+
+  nav a .fa-solid {
+    display: none;
+  }
+
+  /* Home */
+
+  .home-section {
+    background: #1c1a19 url("resources/desktop\ wallpaper.png") 100% 110% no-repeat;
+    background-size: 590px;
+  }
+
+  .home {
+    height: calc(100vh - 72px);
+    width: 80%;
+    margin: auto;
+    padding: unset;
+  }
+
+  .home-content {
+    width: 50%;
+  }
+
+  .home .intro h1 {
+    font-size: 72px;
+    margin-bottom: 24px;
+  }
+
+  .home .job h2 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .home .bio p {
+    font-size: 20px;
+  }
+
+  .home .socials ul {
+    flex-direction: column;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  /* recent work */
+
+  .recent-work {
+    width: 80%;
+    margin: auto;
+  }
+
+  .recent-work .heading {
+    flex-direction: row;
+    margin: 135px 0 114px 0;
+    justify-content: flex-start;
+  }
+
+  .recent-work .heading > .title {
+    padding-top: 0;
+  }
+
+  .recent-work .line {
+    margin: 0 auto;
+    min-width: 65%;
+  }
+
+  .works {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 35px;
+  }
+
+  .works .main {
+    display: flex;
+    grid-column: 1 / 4;
+  }
+
+  .works .main .poster {
+    width: 60%;
+  }
+
+  .recent-work .works .description > .title {
+    font-size: 40px;
+  }
+
+  .description > .about {
+    font-size: 20px;
+  }
+
+  /* About Me */
+
+  #about-me {
+    background: #1c1a19 url("resources/About\ desktop\ wallpaper.png") 100% no-repeat;
+  }
+
+  #about-me .about-content {
+    width: 80%;
+  }
+
+  #about-me .about-content .about-block {
+    width: 50%;
+  }
+
+  #about-me .about-content .heading {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  #about-me .about-content .bio {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 36px;
+  }
+
+  #about-me hr {
+    width: 80%;
+    margin: auto;
+  }
+
+  .personal-skill-content {
+    width: 80%;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    text-align: unset;
+  }
+
+  /* contact form */
+
+  #contact {
+    width: 80%;
+    flex-direction: row;
+  }
+
+  #contact .contact-heading {
+    text-align: unset;
+    width: 40%;
+    margin-right: 50px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  #contact .form {
+    flex-grow: 1;
+  }
+
+  .form form button {
+    margin: 25px 0;
+  }
+
+  footer .mobile {
+    display: none;
+  }
 }
