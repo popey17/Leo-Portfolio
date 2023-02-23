@@ -188,9 +188,31 @@ nav a {
   line-height: 48px;
 }
 
-.card-block .card-pic {
-  position: relative;
+.card-block .card-pic.one {
   height: 338px;
+  background: url("resources/aura.png") 100% no-repeat;
+  background-size: cover;
+}
+
+.card-block .card-pic.two {
+  height: 338px;
+  background: url("resources/two.png") 100% no-repeat;
+  background-size: cover;
+}
+
+.card-block .card-pic.three {
+  height: 338px;
+  background: url("resources/Three.png") 100% no-repeat;
+  background-size: cover;
+}
+
+.card-block .card-pic.four {
+  height: 338px;
+  background: url("resources/four.png") 100% no-repeat;
+  background-size: cover;
+}
+
+.card-block .card-pic .card-info {
   background:
     linear-gradient(
       180.45deg,
@@ -206,24 +228,25 @@ nav a {
         38,
         0.9
       ) 61.94%
-    ),
-    url(
-      "resources/aura.png"
     );
-}
-
-.card-block .card-pic .card-info {
-  display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 338px;
+  display: flex;
   color: #fff;
   padding: 5%;
+  opacity: 1;
+}
+
+.card-block .card-pic .card-info:hover {
+  opacity: 0;
 }
 
 .card-block .card-pic .card-info .card-title {
   font-family: 'Crete Round', serif;
+  font-weight: 400;
   font-size: 32px;
+  line-height: 44px;
   margin-bottom: 10px;
 }
 
@@ -537,8 +560,6 @@ footer .mobile {
     flex-direction: row;
     margin: 135px 0 114px 0;
     justify-content: flex-start;
-
-    /* gap: 24px; */
   }
 
   .recent-work .heading > .title {
@@ -553,7 +574,7 @@ footer .mobile {
   .works {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     gap: 35px;
   }
