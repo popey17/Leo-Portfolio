@@ -6,7 +6,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  /* overflow: hidden; */
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -58,6 +58,7 @@ nav a {
 .home-section {
   background: #1c1a19 url("resources/Group.png") 100% 110% no-repeat;
   background-size: 120px;
+  overflow: hidden;
 }
 
 .home {
@@ -73,7 +74,8 @@ nav a {
   font-family: 'Crete Round', serif;
   font-weight: 400;
   font-size: 56px;
-  line-height: 64px;
+  line-height: 68px;
+  padding-bottom: 10px ;
   color: #ff6b00;
 }
 
@@ -610,11 +612,6 @@ footer .mobile {
   .works .main .poster {
     width: 60%;
     transition: width 2s, height 2s;
-  }
-
-  .works .main .poster:hover {
-    width: 500px;
-    height: 400px;
   }
 
   .recent-work .works .description > .title {
