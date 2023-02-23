@@ -6,6 +6,8 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -49,10 +51,15 @@ nav a {
   padding: 10px 24px;
 }
 
+.nav-items li .nav-link:hover {
+  color: #e05304;
+}
+
 /* Home */
 .home-section {
   background: #1c1a19 url("resources/Group.png") 100% 110% no-repeat;
   background-size: 120px;
+  overflow: hidden;
 }
 
 .home {
@@ -68,7 +75,8 @@ nav a {
   font-family: 'Crete Round', serif;
   font-weight: 400;
   font-size: 56px;
-  line-height: 64px;
+  line-height: 68px;
+  padding-bottom: 10px;
   color: #ff6b00;
 }
 
@@ -96,6 +104,10 @@ nav a {
   font-size: 20px;
   color: #fff;
   list-style: none;
+}
+
+.home .socials i:hover {
+  color: #e05304;
 }
 
 /* Recent Works */
@@ -530,6 +542,20 @@ footer .mobile {
   .home .intro h1 {
     font-size: 72px;
     margin-bottom: 24px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .home .job h2 {
@@ -586,6 +612,7 @@ footer .mobile {
 
   .works .main .poster {
     width: 60%;
+    transition: width 2s, height 2s;
   }
 
   .recent-work .works .description > .title {
@@ -614,6 +641,8 @@ footer .mobile {
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
+    animation-duration: 3s;
+    animation-name: slidein;
   }
 
   #about-me .about-content .bio {
@@ -660,5 +689,11 @@ footer .mobile {
 
   footer .mobile {
     display: none;
+  }
+
+  .home .socials i:hover {
+    color: #e05304;
+    transform: scale(2);
+    transition: transform 0.8s;
   }
 }
