@@ -49,6 +49,10 @@ nav a {
   padding: 10px 24px;
 }
 
+.nav-items li .nav-link:hover {
+  color: #e05304;
+}
+
 /* Home */
 .home-section {
   background: #1c1a19 url("resources/Group.png") 100% 110% no-repeat;
@@ -96,6 +100,10 @@ nav a {
   font-size: 20px;
   color: #fff;
   list-style: none;
+}
+
+.home .socials i:hover {
+  color: #e05304;
 }
 
 /* Recent Works */
@@ -660,5 +668,11 @@ footer .mobile {
 
   footer .mobile {
     display: none;
+  }
+
+  .home .socials i:hover {
+    color: #e05304;
+    transform: scale(2);
+    transition: transform 0.8s;
   }
 }
