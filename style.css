@@ -6,6 +6,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  /* overflow: hidden; */
 }
 
 body {
@@ -538,6 +539,20 @@ footer .mobile {
   .home .intro h1 {
     font-size: 72px;
     margin-bottom: 24px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
 
   .home .job h2 {
@@ -594,6 +609,12 @@ footer .mobile {
 
   .works .main .poster {
     width: 60%;
+    transition: width 2s, height 2s;
+  }
+
+  .works .main .poster:hover {
+    width: 500px;
+    height: 400px;
   }
 
   .recent-work .works .description > .title {
@@ -622,6 +643,8 @@ footer .mobile {
     font-weight: 400;
     font-size: 72px;
     line-height: 82px;
+    animation-duration: 3s;
+    animation-name: slidein;
   }
 
   #about-me .about-content .bio {
