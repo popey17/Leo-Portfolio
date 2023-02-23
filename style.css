@@ -636,4 +636,8 @@ footer .mobile {
   .form form button {
     margin: 25px 0;
   }
+
+  footer .mobile {
+    display: none;
+  }
 }
