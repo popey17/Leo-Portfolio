@@ -69,15 +69,15 @@
         <div class="works">
             <div class="main">
                 <div class="poster">
-                    <img src="resources/plannetrabbit.png" alt="plannet rabbit">
+                    <img src="resources/plannetrabbit.png" alt="portfolio_imgg">
                 </div>
                 <div class="description">
-                    <div class="title">
+                    <h2 class="title">
                         Plannet Rabbit Portfolio
-                    </div>
-                    <div class="about">
+                    </h2>
+                    <p class="about">
                         A portfolio of an artist. Can check her works of arts from the site.
-                    </div>
+                    </p>
                     <div class="lang">
                         <ul>
                             <li>html</li>
@@ -293,16 +293,19 @@
     <!--Contact form-->
     <section id="contact">
         <div class="contact-heading">
-            <div>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-            </div>
+            <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+            </p>
         </div>
         <div class="form">
             <form action="https://formspree.io/f/xknarzjq" method="post">
-                <input class="form-fill" type="text" name="name" maxlength="30" pattern="^[a-zA-Z]{3,30}$"
+                <label for="name" hidden>name</label>
+                <input class="form-fill" type="text" name="name" id="name" maxlength="30" pattern="^[a-zA-Z]{3,30}$"
                     placeholder="Full name" required>
-                <input class="form-fill" type="email" name="email"
+                <label for="email" hidden>name</label>
+                <input class="form-fill" type="email" name="email" id="email"
                     pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Email address"
                     required>
+                <label for="text" hidden>name</label>
                 <textarea name="mail-content" id="text" pattern="^[a-zA-Z0-9]{1,500}$" maxlength="500" cols="30"
                     rows="5" placeholder="Enter text here" required></textarea>
                 <button class="submit" type="submit">Get in touch</button>
