@@ -718,6 +718,7 @@ footer .mobile {
     line-height: 82px;
     animation-duration: 3s;
     animation-name: slidein;
+    overflow: hidden;
   }
 
   #about-me .about-content .bio {
