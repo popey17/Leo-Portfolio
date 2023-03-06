@@ -532,6 +532,11 @@ footer .mobile {
     background: unset;
   }
 
+  nav .nav-items {
+    display: flex;
+    flex-direction: row;
+  }
+
   nav div .fa-solid {
     display: none;
     color: red;
