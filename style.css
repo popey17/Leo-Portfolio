@@ -32,7 +32,7 @@ nav {
   font-size: 18px;
 }
 
-/* .nav-content {
+.nav-content {
   position: absolute;
   top: 50px;
   left: 0;
@@ -42,7 +42,7 @@ nav {
   background: #423f3f;
   transition: ease 2s;
   display: none;
-} */
+}
 
 .nav-content.show {
   display: block;
@@ -525,15 +525,16 @@ footer .mobile {
   }
 
   .nav-content {
-    position: unset;
+    position: static;
+    display: block;
+    height: auto;
+    width: auto;
+    background: unset;
   }
 
-  .nav-items {
-    display: flex;
-  }
-
-  nav a .fa-solid {
+  nav div .fa-solid {
     display: none;
+    color: red;
   }
 
   /* Home */
