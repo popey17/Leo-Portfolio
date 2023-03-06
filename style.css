@@ -632,6 +632,10 @@ footer .mobile {
     }
   }
 
+  .home .intro h1 {
+    overflow: hidden;
+  }
+
   .home .job h2 {
     font-size: 32px;
     margin-bottom: 24px;
