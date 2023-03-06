@@ -618,6 +618,7 @@ footer .mobile {
     margin-bottom: 24px;
     animation-duration: 3s;
     animation-name: slidein;
+    overflow: hidden;
   }
 
   @keyframes slidein {
@@ -630,10 +631,6 @@ footer .mobile {
       margin-left: 0%;
       width: 100%;
     }
-  }
-
-  .home .intro h1 {
-    overflow: hidden;
   }
 
   .home .job h2 {
